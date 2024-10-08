@@ -1,0 +1,71 @@
+@charset "UTF-8";
+:root[data-theme="color-a"] {
+    --color-main: orange;
+    --color-sub: gold;
+    --color-text: #ffffff;
+}
+
+:root[data-theme="color-b"] {
+    --color-main:  rgb(67, 207, 151);
+    --color-sub: rgb(218, 249, 218);
+    --color-text: #ffffff;
+}
+
+:root[data-theme="color-c"] {
+    --color-main: rgb(61, 61, 200);
+    --color-sub: rgb(166, 166, 232);
+    --color-text: #fff;
+}
+
+:root[data-theme="color-d"] {
+    --color-main: rgb(215, 113, 142);
+    --color-sub: rgb(208, 156, 171);
+    --color-text: #fff;
+}
+
+body {
+    background-color: var(--color-main);
+    color: var(--color-text);
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-sub);
+}
+
+/*ボタンの装飾*/
+button {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    border: 1px solid #fff;
+}
+
+#btn-a {
+    background-color: orange;
+    color: #ffffff;
+}
+
+#btn-b {
+    background-color: rgb(0, 128, 107);
+    color: #ffffff;
+}
+
+#btn-c {
+    background-color: rgb(49, 49, 162);
+    color: #fff;
+}
+
+#btn-d {
+    background-color: rgb(228, 116, 172);
+    color: #fff;
+}
